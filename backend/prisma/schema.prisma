@@ -17,6 +17,6 @@ model Todo {
 model Task {
   id          Int    @id @default(autoincrement())
   description String
-  Todo        Todo?  @relation(fields: [todoId], references: [id])
+  todo        Todo?  @relation(fields: [todoId], references: [id])
   todoId      Int?
 }
